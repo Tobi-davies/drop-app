@@ -194,9 +194,8 @@ class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> {
   configure() {}
   renderContent() {
     this.element.querySelector("h2")!.textContent = this.project.title;
-    this.element.querySelector(
-      "h3"
-    )!.textContent = this.project.people.toString();
+    this.element.querySelector("h3")!.textContent =
+      this.project.people.toString() + " assigned Projects";
     this.element.querySelector("p")!.textContent = this.project.description;
   }
 }
